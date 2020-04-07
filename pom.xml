@@ -100,12 +100,12 @@
                 <version>5.2.4</version>
                 <configuration>
                     <url>jdbc:postgresql://localhost:5432/java-startup-ideas</url>
-                    <user>arkhamsrazor</user>
+                    <user>postgres</user>
                     <password>password</password>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
-    
+
 </project>
