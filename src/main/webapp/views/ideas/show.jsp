@@ -1,14 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<%@ page import="com.launchacademy.startupideas.Idea" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:set var="idea" value="${requestScope.idea}" scope="request" />
+<%-- set directives for page, taglib, and import Idea --%>
+<%-- use JSTL to set a variable from the requestScope  --%>
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title><c:out value="${idea.title}" /></title>
+    <%-- use JSTL to populate the title using the idea.title --%>
+    <title>/></title>
   </head>
   <body>
-    <h1><c:out value="${idea.title}" /></h1>
-    <p><c:out value="${idea.description}" /></p>
+    <%-- use JSTL to populate the header using the idea.title --%>
+    <h1></h1>
+    <%-- use JSTL to populate the paragraph using the idea.description --%>
+    <p></p>
   </body>
 </html>

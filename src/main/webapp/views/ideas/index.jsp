@@ -1,21 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@page import="com.launchacademy.startupIdeas.Idea" %>
+ <%-- set directives for page, taglib, and import Idea --%>
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Ideas</title>
   </head>
   <body>
-    <h1>Startup Ideas</h1>
-    <ul>
-      <c:forEach var="idea" items="${requestScope.ideas}">
-        <li>
-          <a href="/ideas?id=<c:out value="${idea.id}"/>">
-            <c:out value="${idea.title}"/>
-          </a>
-         </li>
-      </c:forEach>
-    </ul>
+    <%-- create your HTMl here and use JSTL to loop over the ideas list provided by the controller  --%>
+    <%-- ensure you are outputting each idea in an <LI> within a <UL> --%>
+    <%-- each li should contain a link to the specific idea show page using JSTL and the link text should be the idea.title --%>
+
   </body>
 </html>
